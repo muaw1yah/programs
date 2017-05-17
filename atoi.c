@@ -11,7 +11,14 @@ int parseInt(const char*);
 int main(int argc, char** argv)
 {
 	//take input from commandline args
+	if(argc < 2)
+	{
+		printf("No input received.\n");
+		return 0;
+	}
+
 	char* string = argv[1];
+
 	int number = parseInt(string);
 	
 	printf("Converted to a number %i\n", number);
