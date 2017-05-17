@@ -20,7 +20,8 @@ int main(int argc, char** argv)
 }
 
 //function definition
-int parseInt(const char *string) {
+int parseInt(const char *string) 
+{
 	int output = 0;
 	while(*string)
 	{
